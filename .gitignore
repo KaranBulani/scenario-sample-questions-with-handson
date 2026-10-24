@@ -1,0 +1,57 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Test / coverage ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# --- Type checkers / linters ---
+.mypy_cache/
+.ruff_cache/
+.pylint.d/
+
+# --- Airflow (local dev artifacts) ---
+airflow.db
+airflow.cfg
+logs/
+unittests.cfg
+webserver_config.py
+
+# --- Spark (local runs) ---
+derby.log
+metastore_db/
+spark-warehouse/
+
+# --- Beam / Dataflow local staging ---
+staged-files/
+
+# --- Secrets / environment ---
+.env
+.env.*
+*.json.key
+*service-account*.json
+
+# --- IDEs ---
+.idea/
+.vscode/
+*.swp
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
